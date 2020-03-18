@@ -5,31 +5,25 @@ import org.testng.annotations.Test;
 
 public class TemperatureTest {
 
-  /**
-   * Test data for Fahrenheit to Celsius conversion.
-   * @return test data array
-   */
   @DataProvider(name = "Fahrenheit")
   public static Object[][] fahrenheit() {
     return new Object[][]{
         {212.0, 100.0},
         {32.0, 0.0},
-        {-15, -26.11111111111111}
-        // TODO add 2 more test data here
+        {-15, -26.11111111111111},
+            {1, -17.22222222222222},
+            {-34, -36.666666666666664}
     };
   }
 
-  /**
-   * Test data for Celsius to Fahrenheit conversion.
-   * @return test data array
-   */
   @DataProvider(name = "Celsius")
   public static Object[][] celsius() {
     return new Object[][]{
         {100.0, 212.0},
         {0.0, 32.0},
-        {-26.11111111111111, -15}
-        // TODO add 2 more test data here
+        {-26.11111111111111, -15},
+            {5, 41.0},
+            {0.12, 32.216}
     };
   }
 

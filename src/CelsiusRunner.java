@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class CelsiusRunner {
 
-  /**
-   * The main method is to ask users input and convert it from Celsius to Fahrenheit.
-   * @param args empty
-   */
   public static void main(String[] args) {
 
     Scanner input = new Scanner(System.in);
